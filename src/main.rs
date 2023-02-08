@@ -385,5 +385,5 @@ fn main() {
     let stdout = stdout().lock().into_raw_mode().unwrap();
     let mut game = Game::new(stdout);
     game.start();
-    print!("\x1bc");
+    print!("\x1bc"); // dont know why buy restores terminal good
 }
